@@ -55,8 +55,8 @@
    con transparencia, p. ej. rgba(255, 0, 180, .5).
    ============================================================ */
 :root[data-custom="on"] {
-  --portal: #ff2fb3;
-  --portal-deep: #8f0a66;
+  --portal: #FC0000;
+  --portal-deep: #A30000;
   --portal-glow: rgba(255, 47, 179, .5);
 }
 * { box-sizing: border-box; }
