@@ -1,8 +1,8 @@
 # proyecto-web-ia
 
 # Miembros
--José Adrián Jacobo Menéndez
--David Aioria Cab Barredo
+- José Adrián Jacobo Menéndez
+- David Aioria Cab Barredo
 
 # Descripción
 Proyecto que usa HTML, CSS y JavaScript que hace uso de una API RickAndMorty, para interactuar con los personajes y visualizarlos y organizarlos.
