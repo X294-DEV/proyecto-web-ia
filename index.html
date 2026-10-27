@@ -15,6 +15,10 @@
       <button id="tab-all" class="tab active" role="tab" aria-selected="true">Personajes</button>
       <button id="tab-fav" class="tab" role="tab" aria-selected="false">Favoritos <span id="fav-count" class="badge">0</span></button>
     </nav>
+    <div class="theme-controls">
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Cambiar entre modo claro y oscuro" title="Modo claro / oscuro">☀</button>
+      <button id="custom-toggle" class="icon-btn" type="button" aria-pressed="false" aria-label="Activar color personalizado" title="Color personalizado">🎨</button>
+    </div>
   </header>
 
   <main>
@@ -72,6 +76,13 @@
   </div>
 
   <footer>Datos de <a href="https://rickandmortyapi.com" target="_blank" rel="noopener">rickandmortyapi.com</a></footer>
+  <script>
+    try {
+      const d = document.documentElement;
+      d.dataset.theme = localStorage.getItem("rm_theme") || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      d.dataset.custom = localStorage.getItem("rm_custom") === "on" ? "on" : "off";
+    } catch {}
+  </script>
   <script src="script.js"></script>
 </body>
 </html>

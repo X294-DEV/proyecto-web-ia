@@ -218,6 +218,31 @@ els.modalClose.addEventListener("click", closeModal);
 els.modal.addEventListener("click", (e) => { if (e.target === els.modal) closeModal(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeModal(); });
 
+/* ---------- Tema (claro/oscuro y color personalizado) ---------- */
+const root = document.documentElement;
+const themeBtn = $("theme-toggle");
+const customBtn = $("custom-toggle");
+
+function syncThemeButtons() {
+  const light = root.dataset.theme === "light";
+  themeBtn.textContent = light ? "☾" : "☀";
+  customBtn.setAttribute("aria-pressed", root.dataset.custom === "on");
+}
+function store(key, value) {
+  try { localStorage.setItem(key, value); } catch {}
+}
+themeBtn.addEventListener("click", () => {
+  root.dataset.theme = root.dataset.theme === "light" ? "dark" : "light";
+  store("rm_theme", root.dataset.theme);
+  syncThemeButtons();
+});
+customBtn.addEventListener("click", () => {
+  root.dataset.custom = root.dataset.custom === "on" ? "off" : "on";
+  store("rm_custom", root.dataset.custom);
+  syncThemeButtons();
+});
+syncThemeButtons();
+
 /* ---------- Inicio ---------- */
 els.favCount.textContent = favorites.length;
 fetchCharacters();
