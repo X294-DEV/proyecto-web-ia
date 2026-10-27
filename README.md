@@ -1,17 +1,17 @@
 # proyecto-web-ia
 
-Miembros
+# Miembros
 -José Adrián Jacobo Menéndez
 -David Aioria Cab Barredo
 
-#Descripción
+# Descripción
 Proyecto que usa HTML, CSS y JavaScript que hace uso de una API RickAndMorty, para interactuar con los personajes y visualizarlos y organizarlos.
 
-#Instrucciones de uso
+# Instrucciones de uso
 Entra al enlace de GitHub Pages: https://x294-dev.github.io/proyecto-web-ia/
 
-#Prompts usados:
--Realiza una página, usando los archivos que se encuentran en la carpeta y con los siguientes criterios:
+# Prompts usados:
+- Realiza una página, usando los archivos que se encuentran en la carpeta y con los siguientes criterios:
 Cada equipo desarrollará una página web que consulte información real desde una API 
 pública. 
 API recomendada: Rick and Morty API 
@@ -32,12 +32,12 @@ Requisitos obligatorios
 Importante: No se aceptan páginas estáticas que simplemente muestren información 
 escrita manualmente. La aplicación debe consumir los datos de la API.
 
--Me gustaría que le pusieras un diseño con estilo de bóveda metálica con estética de los portales de la serie.
+- Me gustaría que le pusieras un diseño con estilo de bóveda metálica con estética de los portales de la serie.
 
--Por ultimo, ¿Puedes agregar una opción para cambiar entre modo claro y oscuro y una para cambiar entre un color personalizado?
+- Por ultimo, ¿Puedes agregar una opción para cambiar entre modo claro y oscuro y una para cambiar entre un color personalizado?
 
-#Dificultades
+# Dificultades
 
--Ninguna respecto al uso de IA.
--Ninguna respecto al código.
--Ninguna respecto a GitHub.
+- Ninguna respecto al uso de IA.
+- Ninguna respecto al código.
+- Respecto a GitHub solamente la parte de tener que editar código desde el editor incorporado de GitHub, es más complicado que usar VS Code.
